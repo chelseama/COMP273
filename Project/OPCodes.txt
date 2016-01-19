@@ -1,0 +1,31 @@
+1. 1001 load
+2. 0001 store
+3. 0010 add
+4. 0011 subtract
+5. 0100 beq
+6. 0101 bne
+7. 0110 print
+8. 0111 input
+9. 1000 stop
+10.0000 fetch
+11.1010 add2
+12.1011 sub2
+13.1100 mult
+ this is the program due to our conection issue not working 
+address	information
+0	multiplication number 0
+1	00000001(default 1 for sub)
+2	answer
+3	00000001(load 1 to reg1)
+4	00000000(load mult0 to reg0)
+5	00110000(SUB reg0 by reg1 put back to reg0)
+6	00010000(STORE REG0 TO 0000 IN RAM)
+7	01110000(input mult1 to reg0)
+8	00000010(load from ram 0010 to reg1)
+9	00100000(add reg0 and reg1 back to reg1)
+10	00010010(storereg1 to ram 0010 )
+11	00000000(LOAD FROM 0000 TO REG1)
+12	00110000((SUB reg0 by reg1 put back to reg0 )
+13	01010011(if r0 !=r1 pc = 0011)
+14	00000010(load from ram 0010 to reg1)
+15	01100000(PRINT ANSWER)
